@@ -1,5 +1,11 @@
-function App() {
-  return <h1>hello world</h1>;
-}
+import { BrowserRouter } from 'react-router';
 
-export default App;
+import AppRoutes from './AppRoutes';
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
+}
