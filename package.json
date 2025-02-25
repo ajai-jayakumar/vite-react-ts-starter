@@ -7,9 +7,18 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "dependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
