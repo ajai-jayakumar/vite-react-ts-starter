@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { Input } from './index';
+import { Input } from '../index';
 
 describe('Input Component', () => {
   it('renders the component', () => {
